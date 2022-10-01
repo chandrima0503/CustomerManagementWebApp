@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html>
@@ -11,8 +10,7 @@
 
 
 <link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-	integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
 	crossorigin="anonymous">
 <title>Save Customer</title>
 </head>
@@ -28,7 +26,7 @@
 	<div class="container">
 		<p class="h4 mb-4">Customer</p>
 		
-		<form action = "/CustRelManagement/custrshipmgmt/save" method = "POST">
+		<form action = "/CustomerRM/custrshipmgmt/save" method = "POST">
 		
 			<input type="hidden" name="id" value="${customer.id}"/>
 			
@@ -52,7 +50,7 @@
 		</form>
 		
 		<hr>
-		<a href="/CustRelManagement/custrshipmgmt/list" class = "btn btn-primary">Back to Customer List</a>
+		<a href="/CustomerRM/custrshipmgmt/list" class = "btn btn-primary">Back to Customer List</a>
 	</div>
 
 </body>

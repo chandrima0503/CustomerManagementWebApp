@@ -26,9 +26,9 @@
 		</div>
 		
 		<div class="container">
-		<form action="/CustRelManagement/books/search"
+		<form action="/CustomerRM/books/search"
 		class="form-inline">
-		<a href="/CustRelManagement/custrshipmgmt/showFormforAdd"
+		<a href="/CustomerRM/custrshipmgmt/showFormforAdd"
 		class="btn btn-primary btn-sm mb-3"> Add customer </a>
 		</form>
 		
@@ -49,9 +49,9 @@
 					<td><c:out value="${tempCustomer.lastName}" /></td>
 					<td><c:out value="${tempCustomer.email}" /></td>
 					<td>
-						<a href="/CustRelManagement/custrshipmgmt/showFormforUpdate?id=${tempCustomer.id}"
+						<a href="/CustomerRM/custrshipmgmt/showFormforUpdate?id=${tempCustomer.id}"
 						class="btn btn-info btn-sm"> Update </a><a> | </a>
-						<a href="/CustRelManagement/custrshipmgmt/delete?id=${tempCustomer.id}"
+						<a href="/CustomerRM/custrshipmgmt/delete?id=${tempCustomer.id}"
 						class="btn btn-danger btn-sm" onClick="if (!(confirm('Are you sure you want to delete customer ${tempCustomer.firstName}?'))) return false">
 						Delete</a>
 					</td>					
